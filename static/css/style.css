@@ -2,4 +2,81 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #fff;
+    color: black;
 
+}
+.logo{
+   
+    display: inline-flex;
+    flex-direction: row;
+    margin: 12px 8px;
+
+
+}
+.logo p{
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 8px;
+
+
+}
+header{
+    height: 4rem;
+    background-color: #ff6347;
+    box-shadow: 0 0 20px #7e7c7c;
+
+}
+nav{
+    width: 100%;
+    height: 4rem;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.font-head{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.font-ss{
+    font-family: sans-serif, monospace;
+
+}
+
+.container{
+    width: 100%;
+    height: 600px;
+
+}
+.home-text{
+    width: 100%;
+    text-align: center;
+
+    height: 60px;
+}
+.home-text h1{
+    font-size: 24px;
+
+}
+.home-text h1 span{
+    font-size: 24px;
+    color: #ff6347;
+}
+
+.home-img{
+    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+
+}
+.img-container{
+    margin: 8px 0;
+
+}

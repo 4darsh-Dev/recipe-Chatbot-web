@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recpie-Chatbot</title>
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -19,9 +20,19 @@
                 <img src="/static/img/assistance.png" height="40px" alt="Bot" class="logo-img">
                 <p class="font-head">FlavorMaster.</p>
             </div>
-            <div class="menu-btn">
+            <label id="check-label" for="check" class="checkbtn">
                 <i class='bx bx-menu'></i>
-            </div>
+               
+            </label>
+            <ul class="menu-list">
+                <li><a class="font-ss active" href="/">Home</a></li>
+                <!-- <li><a class="font-ss" href="#about">About</a></li> -->
+                <li><a  class="font-ss" href="/about">About</a></li>
+
+                <li><a class="font-ss" href="/services">Services</a></li>
+                
+                <li><a class="font-ss" href="/contact">Contact</a></li>
+            </ul>
 
         </nav>
 

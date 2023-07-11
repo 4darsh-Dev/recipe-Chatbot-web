@@ -1,65 +1,23 @@
+
+{% extends 'base.html' %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
+{% block title %}Home {% endblock title %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recpie-Chatbot</title>
-    <link rel="stylesheet" href="{% static '/css/style.css' %}">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+{% block head %}
+<link rel="stylesheet" href="{% static '/css/style.css' %}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+{% endblock head %}
 
-<body>
+<section class="home" id="home">
+    <div class="container">
+        <!-- <div class="font-ss home-text" >
+            <h1>Welcome to <span>FlavorMaster</span> </h1>
+        </div> -->
+        <div class="img-container">
+            <img class="home-img" src="/static/img/recipe.jpg" alt="FlavorMaster">
 
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="/static/img/assistance.png" height="40px" alt="Bot" class="logo-img">
-                <p class="font-head">FlavorMaster.</p>
-            </div>
-            <label id="check-label" for="check" class="checkbtn">
-                <i class='bx bx-menu'></i>
-               
-            </label>
-            <ul class="menu-list">
-                <li><a class="font-ss active" href="/">Home</a></li>
-                <!-- <li><a class="font-ss" href="#about">About</a></li> -->
-                <li><a  class="font-ss" href="/about">About</a></li>
-
-                <li><a class="font-ss" href="/services">Services</a></li>
-                
-                <li><a class="font-ss" href="/contact">Contact</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
-
-    <main>
-        <section class="home" id="home">
-            <div class="container">
-                <!-- <div class="font-ss home-text" >
-                    <h1>Welcome to <span>FlavorMaster</span> </h1>
-                </div> -->
-                <div class="img-container">
-                    <img class="home-img" src="/static/img/recipe.jpg" alt="FlavorMaster">
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-
-    </footer>
-
-    <script src="{% static '/js/script.js' %}"> </script>
-
-
-</body>
-
-</html>
+        </div>
+    </div>
+</section>

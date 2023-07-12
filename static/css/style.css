@@ -32,7 +32,7 @@ header{
 }
 nav{
     width: 100%;
-    /* height: 4rem; */
+    height: 4rem;
     /* background-color: blue; */
     display: flex;
     flex-direction: row;
@@ -111,6 +111,8 @@ nav{
 } */
 .checkbtn{
     display: block;
+    position: absolute;
+    right: 0px;
 
 }
 
@@ -131,7 +133,7 @@ ul{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #ff6347;
+    background: #fff;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -147,17 +149,19 @@ nav ul li{
 
 nav ul li a{
     font-size: 20px;
-    color: #fff;
+    color: #7e7c7c;
+    text-decoration: none;
 
 }
 nav ul li a:hover, a.active{
-    color: #0ef;
+    color: #ff6347;
+    text-decoration: underline;
 }
 
 #check:checked ~ ul{
     z-index: 999;
     left: 0;
-    top: 0;
+    top: 64px;
 
 }
 

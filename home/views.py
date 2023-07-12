@@ -9,6 +9,12 @@ def index(request):
 
 
  
+
+def recipe(request):
+    return render(request, "recipe.html") 
+
+
+ 
 def about(request):
     return render(request, "about.html") 
 

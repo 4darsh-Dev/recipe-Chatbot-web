@@ -3,8 +3,10 @@
     padding: 0;
 }
 body{
-    background-color: #fff;
+    background-color: #ebe7e7;
     color: black;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 
 }
 .logo{
@@ -171,18 +173,25 @@ nav ul li a:hover, a.active{
     
 }
 
+.main-bg-1{
+    background-color: #ff6347;
+}
+
 .last-text{
-    padding: 0 6px;
+    padding: 13px 6px;
 }
 
 .last-text p{
     margin-top: 0px;
+    color: #fff;
 }
 
 
 #heart{
-    color: #ff004f;
+    color: #fff;
 }
-
+footer{
+    height: 4rem;
+}
 
 

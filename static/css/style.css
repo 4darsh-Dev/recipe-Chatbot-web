@@ -195,3 +195,16 @@ footer{
 }
 
 
+.btn-box{
+    width: 100%;
+    height: 4rem;
+    background-color: blue;
+
+}
+
+.btn{
+    background-color: #ff6347;
+    max-width : 60px;
+    width: 100%;
+    color: white;
+}

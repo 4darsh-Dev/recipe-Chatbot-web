@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+    height: auto;
+
+}
+
+.bot-img{
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    background-color: #ebe7e7;
+    margin: 12px 8px;
+
+
+}
+.bot-img img{
+    max-height: 36px;
+    height: 100%;
+    width: auto;
+
+}
+
+.chat-box{
+   width: calc(100% - 80px);
+   height: 600px;
+   padding:  0 40px;
+   /* background-color: red; */
+
+}
+
+.bot-message{
+    width: auto;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 55px;
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}

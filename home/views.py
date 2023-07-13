@@ -11,7 +11,9 @@ def index(request):
  
 
 def recipe(request):
-    return render(request, "recipe.html") 
+    greeting = "Are you Hungry?"
+    return render(request, "recipe.html", {"greeting": greeting}) 
+    
 
 
  

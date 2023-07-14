@@ -6,8 +6,8 @@
 {% block title %} Recipe {% endblock title %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static '/css/style.css' %}">
-<link rel="stylesheet" href="{% static '/css/recipe.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/recipe.css' %}">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 {% endblock head %}
 
@@ -18,20 +18,25 @@
         <div class="bot-img">
             <img src="{% static '/img/chat-bot.svg' %}" alt="Bot">
         </div>
-        <div class="chat-box">
-            <div class="bot-message">
+        <div  class="chat-box">
+            <div  class="bot-message">
                 <p>{{ greeting }}</p>
+
+            </div>
+            <div class="user-message" id="main-chbot">
+
             </div>
         </div>
         <div class="user-box">
             <div class="us-box-ins">
 
-                <div class="mess-fm">
-                    <form action="">
-                        <input  type="text" placeholder="Enter your message...">
+                <div id="chatbox" class="mess-fm">
+                    <form id="chat-form" method="POST" action="{% url 'process_message' %}" >
+                        {% csrf_token %}
+                        <input id="user-input"  type="text" placeholder="Enter your message...">
                     </form>
                 </div>
-                <div class="mess-btn">
+                <div id="mess-btn" class="mess-btn">
                     <i  class='bx bx-send'></i>
                 </div>
 
@@ -48,6 +53,11 @@
 
 {% block script %}
 
-<script src="{% static '/js/script.js' %}"> </script>
+<!-- jquery always before custom js -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static 'js/script.js' %}"> </script>
+<script src="{% static 'js/recipe.js' %}"> </script>
+
+
 
 {% endblock script %}

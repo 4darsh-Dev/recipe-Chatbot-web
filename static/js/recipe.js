@@ -1,14 +1,15 @@
 $(document).ready(function() {
-    var chatbox = $('#chatbox');
+    // let botMessage = $('#bot-message');
+    var mainChatbox = $('#main-chbot');
     var chatForm = $('#chat-form');
 
     function displayMessage(message) {
         var messageElement = $('<div>').text(message);
-        chatbox.append(messageElement);
+        mainChatbox.append(messageElement);
     }
 
     function sendMessage(message) {
-        $.get('/chatbot/process_message/', { message: message }, function(response) {
+        $.get('/recipe/process_message/', { message: message }, function(response) {
             var reply = response.message;
             displayMessage(reply);
         });
@@ -17,9 +18,22 @@ $(document).ready(function() {
     // Handle form submission
     chatForm.submit(function(event) {
         event.preventDefault();
-        var userInput = 'User: ' + $('#user-input').val();
+        var userInput = 'You: ' + $('#user-input').val();
         displayMessage(userInput);
         sendMessage($('#user-input').val());
         $('#user-input').val('');
     });
 });
+
+
+// Written
+
+let messBtn = document.getElementById("mess-btn");
+let myFrom = document.getElementById("chat-form");
+
+const submitFm = ()=>{
+    myFrom.submit();
+}
+
+messBtn.addEventListener('click',submitFm);
+

@@ -6,7 +6,8 @@
 {% block title %}About {% endblock title %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static '/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 {% endblock head %}
 
@@ -15,15 +16,15 @@
 <section class="home" id="home">
     <div class="container">
        
-        <h1>About FlavorMaster</h1>
+        <h1 class="font-head">About FlavorMaster</h1>
     
         <p>Welcome to FlavorMaster, your personal culinary chatbot companion! Are you hungry and in need of inspiration for your next delicious meal? Look no further. FlavorMaster is here to assist you with a wide variety of recipes, preparation tips, and suggested recipe videos.</p>
         
-        <h2>Our Mission</h2>
+        <h2 class="font-head">Our Mission</h2>
         
         <p>At FlavorMaster, our mission is to provide you with a delightful cooking experience. We want to make it easy for you to explore new recipes, learn valuable preparation tips, and watch engaging recipe videos that will elevate your culinary skills.</p>
         
-        <h2>What can FlavorMaster do for you?</h2>
+        <h2 class="font-head">What can FlavorMaster do for you?</h2>
         
         <p>FlavorMaster offers an array of features designed to satisfy your culinary cravings:</p>
         
@@ -33,7 +34,7 @@
             <li><strong>Suggested Recipe Videos:</strong> We understand the power of visual inspiration. FlavorMaster provides handpicked recipe videos to guide you through the cooking process. Watch the step-by-step videos and master your favorite dishes.</li>
         </ul>
         
-        <h2>Connect with FlavorMaster</h2>
+        <h2 class="font-head">Connect with FlavorMaster</h2>
         
         <p>Stay connected with FlavorMaster through various channels to stay up-to-date with the latest recipes, preparation tips, and suggested videos:</p>
         
@@ -51,6 +52,6 @@
 
 {% block script %}
 
-<script src="{% static '/js/script.js' %}"> </script>
+<script src="{% static 'js/script.js' %}"> </script>
 
 {% endblock script %}

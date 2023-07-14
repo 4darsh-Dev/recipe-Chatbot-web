@@ -42,10 +42,21 @@ body{
     display: flex;
     /* justify-content: center; */
     padding: 12px 16px;
+    margin: 12px 0;
 
     align-items: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
+
+.user-message{
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
 }
 .bot-message p{
     color: #616060;

@@ -2,6 +2,24 @@
     margin: 0;
     padding: 0;
 }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
 body{
     background-color: #ebe7e7;
     color: black;
@@ -172,6 +190,7 @@ nav ul li a:hover, a.active{
 }
 footer{
     height: 4rem;
+    /* text-align: center; */
 }
 
 
@@ -212,19 +231,3 @@ footer{
 
 }
 
-html, body {
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  main {
-    flex: 1;
-  }
-  
-  footer {
-    margin-top: auto;
-  }

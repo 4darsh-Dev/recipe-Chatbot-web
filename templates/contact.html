@@ -6,17 +6,40 @@
 {% block title %}Contact {% endblock title %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static '/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 {% endblock head %}
 
 {% block main %}
 
 <section class="home" id="home">
-    <div class="container">
+    <div class="c-container">
+        <div class="img-box">
+            <img src="/static/img/adarsh-maurya.png" alt="Adarsh Maurya Web Developer Programmer and Tech Enthusiast ">
+
+        </div>
+        <div class="about-text">
+            <h1>Adarsh Maurya</h1>
+            <h2>Web Developer Programmer and Blogger</h2>
+            <p>Hello there, tech-savvy minds and visionary leaders! I'm Adarsh Maurya, a passionate web developer, programmer, and all-around tech enthusiast, eager to embark on new adventures in the digital realm.</p>
+            <a href="#" class="btn-box font-ss">Protfolio </a>
+
+        </div>
         
 
         
+    </div>
+
+    <div class="contact-links">
+        <a target="_blank" href="https://www.linkedin.com/in/adarsh-maurya-09343a262/"><i
+            class='bx bxl-linkedin'></i></a>
+    <a href="https://github.com/4darsh-Dev" target="_blank"><i class='bx bxl-github'></i></a>
+    <a target="_blank" href="https://www.facebook.com/people/Onion-Reads/100089856034775"><i
+            class='bx bxl-facebook'></i></a>
+    <a target="_blank" href="#"><i class='bx bxl-instagram'></i></a>
+    <a target="_blank" href="https://twitter.com/OnionReads"><i class='bx bxl-twitter'></i></a>
+
     </div>
 </section>
 

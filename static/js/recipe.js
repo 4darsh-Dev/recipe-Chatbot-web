@@ -4,7 +4,7 @@ $(document).ready(function() {
     var chatForm = $('#chat-form');
 
     function displayMessage(message) {
-        var messageElement = $('<div>').text(message);
+        var messageElement = $('<p>').text(message);
         mainChatbox.append(messageElement);
     }
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
     // Handle form submission
     chatForm.submit(function(event) {
         event.preventDefault();
-        var userInput = 'You: ' + $('#user-input').val();
+        var userInput =   $('#user-input').val() ;
         displayMessage(userInput);
         sendMessage($('#user-input').val());
         $('#user-input').val('');

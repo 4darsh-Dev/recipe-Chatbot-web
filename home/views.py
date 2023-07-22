@@ -18,15 +18,20 @@ def process_message(request):
 
     
     if message is not None:
-        response = {
-            'message': 'You said: ' + message,
-        }
+        if message == 'Yes':
+
+            response = {
+                'title': "Recipe",
+                'desc':"This is your recipe\nEnjoy",
+
+            }
     else:
         response = {
             'message': 'Invalid message received',
         }
 
     return JsonResponse(response)
+    # return responser
  
 
 def recipe(request):
@@ -34,7 +39,7 @@ def recipe(request):
     
 
 
-    return render(request, "recipe.html", {"greeting": greeting}) 
+    return render(request, "recipe.html", {"greeting": greeting}, ) 
     
 
 

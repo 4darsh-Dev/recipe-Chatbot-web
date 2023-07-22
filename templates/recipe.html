@@ -21,11 +21,21 @@
         <div  class="chat-box">
             <div  class="bot-message">
                 <p>{{ greeting }}</p>
+                
 
             </div>
             <div class="user-message" id="main-chbot">
 
             </div>
+            {% if recipes %}
+            <ul>
+                {% for recipe in recipes %}
+                    <li> {{ recipe.title }} </li>
+                {% endfor %}
+
+            </ul>
+            
+            {% endif %}
         </div>
         <div class="user-box">
             <div class="us-box-ins">
@@ -33,7 +43,7 @@
                 <div id="chatbox" class="mess-fm">
                     <form id="chat-form" method="POST" action="{% url 'process_message' %}" >
                         {% csrf_token %}
-                        <input id="user-input" required type="text" placeholder="Enter your message...">
+                        <input value="message" id="user-input" required type="text" placeholder="Enter your message...">
                     </form>
                 </div>
                 <div id="mess-btn" class="mess-btn">

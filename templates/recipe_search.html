@@ -1,0 +1,45 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Recipe Results {% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/recipe.css' %}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+{% endblock head %}
+
+{% block main %}
+
+<section class="home" id="home">
+    <div class="container">
+        
+        {% if recipes %}
+    <h2>Search Results:</h2>
+    <ul>
+        {% for recipe in recipes %}
+        <li>{{ recipe.title }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No recipes found.</p>
+    {% endif %}
+        
+        
+    </div>
+</section>
+
+{% endblock main %}
+
+{% block script %}
+
+<!-- jquery always before custom js -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static 'js/script.js' %}"> </script>
+<script src="{% static 'js/recipe.js' %}"> </script>
+
+
+
+{% endblock script %}

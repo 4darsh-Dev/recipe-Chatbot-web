@@ -3,34 +3,33 @@ from django.shortcuts import render,redirect
 from django.http import JsonResponse
 
 from .models import Recipe
+
 # Create your views here.
 
 def index(request):
     return render(request, "index.html") # you can also give variables ,
 
 
-def recipe_results(request):
+def recipe_search(request):
     if request.method == 'POST':
         query = request.POST.get('message', '')
         recipes = Recipe.objects.filter(title__icontains=query)
+
+        print(recipes);
+  
+        params = {"recipes": recipes}
+
+        return render(request, 'recipe_search.html', params)
+
     else:
-        recipes = Recipe.objects.all()
-    
-    context = {
-        'recipes': recipes,
-        'query': query if request.method == 'POST' else '',
-    }
-    
-
-
-    return render(request, 'recipe_search.html', context)
+        return render(request, 'recipe_search.html' )
  
 
-def recipe(request):
-    greeting = "Are you Hungry?"
 
-    
-    
+
+def recipe(request):
+    greeting = "What would you prefer to eat?"
+
 
     return render(request, "recipe.html", {"greeting": greeting}, ) 
     

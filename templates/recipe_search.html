@@ -16,8 +16,9 @@
 <section class="home" id="home">
     <div class="container">
         
-        {% if recipes %}
+    
     <h2>Search Results:</h2>
+    {% if recipes %}
     <ul>
         {% for recipe in recipes %}
         <li>{{ recipe.title }}</li>

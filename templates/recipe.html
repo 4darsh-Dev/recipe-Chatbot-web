@@ -28,17 +28,15 @@
 
             </div>
 
-
-    
             
         </div>
         <div class="user-box">
             <div class="us-box-ins">
 
                 <div id="chatbox" class="mess-fm">
-                    <form id="chat-form" method="POST" action="" >
+                    <form id="chat-form" method="POST" action="{% url 'recipe_search' %}" >
                         {% csrf_token %}
-                        <input name="message"  id="user-input" required type="text" placeholder="Enter your message...">
+                        <input name="message"  id="message" required type="text" placeholder="Enter your message...">
                     </form>
                 </div>
                 <div id="mess-btn" class="mess-btn">

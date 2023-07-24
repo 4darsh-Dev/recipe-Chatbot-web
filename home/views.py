@@ -30,6 +30,7 @@ def recipe(request):
     greeting = "Are you Hungry?"
 
     
+    
 
     return render(request, "recipe.html", {"greeting": greeting}, ) 
     

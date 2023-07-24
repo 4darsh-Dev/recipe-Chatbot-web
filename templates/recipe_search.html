@@ -8,6 +8,7 @@
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <link rel="stylesheet" href="{% static 'css/recipe.css' %}">
+<link rel="stylesheet" href="{% static 'css/recipe_search.css' %}">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 {% endblock head %}
 
@@ -17,16 +18,24 @@
     <div class="container">
         
     
-    <h2>Search Results:</h2>
-    {% if recipes %}
-    <ul>
-        {% for recipe in recipes %}
-        <li>{{ recipe.Title }}</li>
-        {% endfor %}
-    </ul>
-    {% else %}
-    <p>No recipes found.</p>
-    {% endif %}
+
+{% if recipes %}
+<h2>Search Results: </h2>
+<ul class="recipe-list">
+  {% for recipe in recipes %}
+    <li>
+      <h3>{{ recipe.title }}</h3>
+      <p>Ingredients: {{ recipe.ingredients }}</p>
+      <p>Instructions: {{ recipe.instructions }}</p>
+      <p>Preparation Time: {{ recipe.prepTimeInMins }} mins</p>
+      <p>Cooking Time: {{ recipe.cookTimeInMins }} mins</p>
+      <p>Total Time: {{ recipe.totalTimeInMins }} mins</p>
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No recipes found.</p>
+{% endif %}
         
         
     </div>

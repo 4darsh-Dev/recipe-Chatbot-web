@@ -65,7 +65,7 @@
 
 .img-box{
     width: 50%;
-    max-height: 240px;
+    max-height: 302px;
     
 
 }
@@ -73,7 +73,7 @@
     border-radius: 12%;
     width: 100%;
     height: auto;
-    max-width: 100%;
+    max-width: 240px;
 
 
 }

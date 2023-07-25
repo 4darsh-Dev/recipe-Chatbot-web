@@ -8,6 +8,7 @@
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <link rel="stylesheet" href="{% static 'css/recipe.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 <link rel="stylesheet" href="{% static 'css/recipe_search.css' %}">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 {% endblock head %}
@@ -20,13 +21,15 @@
     
 
 {% if recipes %}
-<h2>Search Results: </h2>
+<h1 class="font-head">Search Results: </h1>
 <ul class="recipe-list">
   {% for recipe in recipes %}
-    <li>
-      <h3>{{ recipe.title }}</h3>
-      <p>Ingredients: {{ recipe.ingredients }}</p>
-      <p>Instructions: {{ recipe.instructions }}</p>
+    <li class="recipe-search-li">
+      <h2>{{ recipe.title }}</h2>
+      <h3>Ingredients </h3>
+      <p>{{ recipe.ingredients }}</p>
+      <h3>Instructions </h3>
+      <p>{{ recipe.instructions }}</p>
       <p>Preparation Time: {{ recipe.prepTimeInMins }} mins</p>
       <p>Cooking Time: {{ recipe.cookTimeInMins }} mins</p>
       <p>Total Time: {{ recipe.totalTimeInMins }} mins</p>
@@ -35,11 +38,16 @@
 </ul>
 {% else %}
 <p>No recipes found.</p>
+<p>Kindly Check your spelling...!</p>
+<p>Try Again...
+</p>
 {% endif %}
         
         
     </div>
 </section>
+
+<a href=# class=top><i class="bx bx-up-arrow-alt"></i></a>
 
 {% endblock main %}
 

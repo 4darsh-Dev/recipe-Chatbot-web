@@ -15,7 +15,7 @@ def recipe_search(request):
         query = request.POST.get('message', '')
         recipes = Recipe.objects.filter(title__icontains=query)
 
-        print(recipes);
+        # print(recipes); to check whether working or not! 
   
         params = {"recipes": recipes}
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -68,6 +70,10 @@ nav{
     font-family: sans-serif, monospace;
 
 }
+.font-mst{
+    font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 .container{
     width: 100%;
@@ -96,10 +102,59 @@ nav{
     max-height: 400px;
 
 }
-.img-container{
-    margin: 8px 0;
+.welcome{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    background-color: #463a2be0;
+    border-radius: 31px;
+    width: 35%;
+    height: 400px;
+    position: relative;
+    top: 60px;
+    left: 40px;
+    padding: 40px;
+
 
 }
+
+.welcome:hover{
+    box-shadow: 0 0 25px #171614;
+}
+
+.welcome h1{
+    color: #fff;
+    font-size: 28px;
+    margin: 12px 0;
+    font-family: Montserrat, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.welcome h1 span{
+    color: #ff6347;
+
+}
+
+.welcome p{
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+
+.img-container{
+    width: 100%;
+    height: 600px;
+    
+    margin: 8px 0;
+    background-image: url(/static/img/recipe-3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: red; */
+}
+
+
 
 .checkbtn{
     font-size: 30px;
@@ -109,7 +164,7 @@ nav{
     margin-right: 40px;
 
     cursor: pointer;
-    
+    display: none;
 }
 
 #check{
@@ -117,66 +172,33 @@ nav{
 
 }
 
-
-
-.checkbtn{
-    display: block;
-    position: absolute;
-    right: 0px;
-
-}
-
-ul{
+.menu-list {
     list-style-type: none;
     display: inline-flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition:  all 0.5s ;
-
+    flex-direction: row;
+    position: relative;
+    left: 27rem;
 
 }
-nav ul li{
-    display: block;
-    margin: 15px 0;
-    line-height: 30px;
-}
-
-nav ul li a{
-    font-size: 20px;
-    color: #7e7c7c;
+.menu-list  li a{
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
+    color: #fff;
+    margin: 13px 20px ;
+}
+.menu-list li a:hover{
+    color: #7e7c7c;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #7e7c7c;
 
 }
-nav ul li a:hover, a.active{
-    color: #ff6347;
-    text-decoration: underline;
-}
-
-#check:checked ~ ul{
-    z-index: 999;
-    left: 0;
-    top: 64px;
-
-}
-
-.menu-list{
-    flex-direction: column;
-    left: -100%;
-    
-}
-
 .main-bg-1{
     background-color: #ff6347;
 }
 
 .last-text{
-    padding: 13px 6px;
+    padding: 23px 6px;
 }
 
 .last-text p{
@@ -190,6 +212,8 @@ nav ul li a:hover, a.active{
     color: #fff;
 }
 footer{
+    margin-top: 8px;
+
     height: 4rem;
     /* text-align: center; */
 }
@@ -201,8 +225,10 @@ footer{
     /* background-color: blue; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    margin: 30px 0;
+
 
 }
 
@@ -214,8 +240,8 @@ footer{
     color: #fff;
     /* height: 3rem; */
     text-align: center;
-    padding: 16px;
-    font-size: 16px;
+    padding: 13px;
+    font-size: 15px;
     font-weight: 600;
     border: 2px solid #ff6347;
     border-radius: 36px;
@@ -231,16 +257,39 @@ footer{
     box-shadow: 0 0 25px #ff6347;
 
 }
-.top{
-    position: fixed;
-    right: 2.2rem;
-    bottom: 2.2rem;
+
+.contact-links {
+
+    width: 300px;
+    height: 56px;
+    display: flex;
+    /* position: absolute;
+    right: 12px;
+    bottom: 10px; */
+    margin: 12px;
+
 }
-.top i{
-    color: #000000;
-    background: #ff6347;
+
+
+
+.contact-links a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ff6347;
+    border-radius: 50%;
     font-size: 20px;
-    padding: 10px;
-    border-radius: 0.5rem;
+    color: #ff6347;
+    text-decoration: none;
+    margin: 6px 15px 6px 0;
+}
+.contact-links a:hover {
+    background: #ff6347;
+    color: #fff;;
+    box-shadow: 0 0 20px #ff6347;
+    transform: scale(1.01) translateY(-4px);
 }
 

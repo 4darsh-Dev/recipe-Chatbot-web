@@ -24,7 +24,7 @@ body{
 }
 
 .chat-box{
-   width: calc(100% - 80px);
+   width: calc(50% - 80px);
    height: 600px;
    padding:  0 40px;
    /* background-color: red; */

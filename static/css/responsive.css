@@ -109,7 +109,17 @@
 
 
     }
+    .chat-box{
+        width: calc(50vw - 80px);
+    }
+    .chat-img-box{
+        background-size: cover;
 
+    }
+    .mess-fm input{
+        width: 40vw;
+
+    }
 
     
 
@@ -231,10 +241,47 @@
 
 
     }
+    .mess-fm input{
+        width: 65vw;
 
+    }
 
+    .chat-box{
+        width: calc(100% - 80px);
+        background-image: url(/static/img/recipe-book.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
 
+    }
+    .chat-img-box{
+        display: none;
+        
 
+    }
+
+    .recipe-list{
+        padding: 0;
+
+    }
+    .recipe-search-li{
+        padding: 5px 15px ;
+
+    }
+    .c-second{
+        display: none;
+    }
+
+    .c-first{
+        /* width: calc(100vw- 80px); */
+        width: 100%;
+
+        background-image: url(/static/img/about-recipe.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    
+    
     
   
 }

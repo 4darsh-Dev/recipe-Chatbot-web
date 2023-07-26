@@ -36,6 +36,8 @@
     font-size: 16px;
     font-family: sans-serif, monospace;
     margin: 15px 0;
+    padding: 0 20px;
+
 
 
 }
@@ -46,6 +48,10 @@
     top: 0;
     left: 0;
     margin: 20px 0;
+    list-style-type: none;
+    padding: 0px 10px;
+
+
 
 
 }
@@ -55,11 +61,12 @@
     background-color: #f5f7f9;
     border:2px solid #f5f7f9;
     border-radius: 8px;
+    padding: 10px 40px;
 
 
 }
 .recipe-search-li:hover{
-    box-shadow: 0 0 25px #ff6347;
+    box-shadow: 0 0 25px #b3adac;
 }
 
 .top{

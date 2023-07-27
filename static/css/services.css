@@ -4,11 +4,30 @@
 .container{
     width: calc(100% - 24px);
     padding: 12px;
-    height: auto;
+    height: 700px;
+    background-image: url(/static/img/services-img.webp);
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+
+
 
 
 }
+.s-first{
+    /* margin: 80px 20px 0 20px; */
+    color: #fff;
+    width: 80%;
 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+}
 body{
     background-color: #fff;
 }
@@ -44,5 +63,13 @@ ul{
 footer{
     margin-top: 60px;
     
+
+}
+
+@media only screen and (max-width:480px) and (min-width: 300px) {
+    .container{
+        height: 900px;
+        
+    }
 
 }

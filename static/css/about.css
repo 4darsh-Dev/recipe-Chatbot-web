@@ -6,7 +6,8 @@
     padding: 12px;
     display: inline-flex;
     flex-direction: row;
-    height: auto;
+    height: 600px;
+
 
 
 }
@@ -15,8 +16,8 @@ body{
 }
 
 .c-first{
-    width: calc(50vw - 40px);
-    padding:  20px;
+    width: calc(50vw - 80px);
+    padding:  40px;
 
 
 }
@@ -55,4 +56,16 @@ body{
 ul{
     list-style-type: none;
     
+}
+
+footer{
+    margin-top: 60px;
+    
+}
+@media only screen and (max-width:900px) and (min-width: 480px) {
+    .container{
+        height:auto;
+
+    }
+
 }

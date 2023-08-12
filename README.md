@@ -32,7 +32,7 @@ To deploy this project run
 
 ## Screenshots
 
-![App Screenshot](https://onionreads.com/wp-content/uploads/2023/08/Screen-Shot-2023-08-08-at-17.56.22.png)
+![App Screenshot](https://onionreads.com/wp-content/uploads/2023/08/flavormaster-home.webp)
 
 
 ## License
@@ -64,4 +64,4 @@ If you have any feedback, please reach out to us at adarsh@onionreads.com
 
 ## Support
 
-For support, email fake@fake.com or join our Slack channel.
+For support, email adarsh@onionreads.com or join our Slack channel.
